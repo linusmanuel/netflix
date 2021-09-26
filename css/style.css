@@ -40,8 +40,29 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 6rem; }
 
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.card {
+  width: 16rem; }
+
+.search-box {
+  width: 100%; }
+
 .input-search {
   outline: none; }
+  .input-search--main {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    width: 100%;
+    padding: 1.4rem 5rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    background: #fff url("../img/search-button.png") no-repeat left;
+    background-position: 2rem;
+    box-sizing: border-box; }
   .input-search--filter {
     width: 70%;
     padding: 1rem;
@@ -52,27 +73,28 @@ body {
     .input-search--filter:not(:last-child) {
       margin-bottom: 1rem; }
 
-.aside {
-  width: 20rem; }
-  .aside__browse {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    padding: 1.5rem 2rem;
-    margin-bottom: 3rem;
-    background-color: #fff; }
-    .aside__browse .navegation__item {
-      padding: 0.8rem 0; }
-    .aside__browse .navegation__link:link, .aside__browse .navegation__link:visited {
-      font-size: 1.4rem;
-      color: #000; }
-    .aside__browse .navegation__link:hover, .aside__browse .navegation__link:active {
-      color: #fe2832; }
-  .aside__filter {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    padding: 1.5rem 2rem;
-    margin-bottom: 3rem;
-    background-color: #fff; }
+.aside__browse {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  width: 20rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  background-color: #fff; }
+  .aside__browse .navegation__item {
+    padding: 0.8rem 0; }
+  .aside__browse .navegation__link:link, .aside__browse .navegation__link:visited {
+    font-size: 1.4rem;
+    color: #000; }
+  .aside__browse .navegation__link:hover, .aside__browse .navegation__link:active {
+    color: #fe2832; }
+
+.aside__filter {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  width: 20rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  background-color: #fff; }
 
 .menu {
   display: flex;

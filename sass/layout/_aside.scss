@@ -1,8 +1,7 @@
 .aside {
-  width: 20rem;
-
   &__browse {
     @include b-shadow-radius();
+    width: 20rem;
     padding: 1.5rem 2rem;
     margin-bottom: 3rem;
     background-color: $color-white;
@@ -29,6 +28,7 @@
 
   &__filter {
     @include b-shadow-radius();
+    width: 20rem;
     padding: 1.5rem 2rem;
     margin-bottom: 3rem;
     background-color: $color-white;
