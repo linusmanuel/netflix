@@ -1,0 +1,43 @@
+.menu {
+  display: flex;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__logo {
+    width: 7.5rem;
+    height: 2.5rem;
+    margin-right: 3rem;
+    background: url("../img/netflix_logo.png") no-repeat center;
+  }
+
+  &__link {
+    @include menu-text();
+    display: inline-block;
+    color: $color-black;
+
+    &:not(:last-child) {
+      margin-right: 1.4rem;
+    }
+  }
+
+  .user {
+    &__img {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1rem;
+      background: url("../img/user.jpg");
+      background-size: cover;
+      border: 2px solid $color-white;
+      border-radius: $default-border-radius;
+      float: left;
+    }
+
+    &__name {
+      @include menu-text();
+      text-transform: capitalize;
+    }
+  }
+}

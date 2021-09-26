@@ -1,0 +1,23 @@
+{
+  "name": "netflix",
+  "version": "1.0.0",
+  "description": "home page netflix movies",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Linus",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "netflix-2.0"
+  },
+  "keywords": [
+    "netflix"
+  ]
+}

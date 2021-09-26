@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1rem;
+  background-color: #f7f7f7; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #000; }
+
+.heading__secondary {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem; }
+
+.heading__tertiary {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin-bottom: 0.3rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem; }
+
+.menu {
+  display: flex;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .menu__logo {
+    width: 7.5rem;
+    height: 2.5rem;
+    margin-right: 3rem;
+    background: url("../img/netflix_logo.png") no-repeat center; }
+  .menu__link {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    display: inline-block;
+    color: #000; }
+    .menu__link:not(:last-child) {
+      margin-right: 1.4rem; }
+  .menu .user__img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    background: url("../img/user.jpg");
+    background-size: cover;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    float: left; }
+  .menu .user__name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: capitalize; }
+
+.header {
+  height: 48rem;
+  position: relative;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
