@@ -43,7 +43,7 @@ Conexão à internet
 ## ✒️ Autores
 
 - **Linus Manuel** - _Desenvolvedor_ - <a href="https://github.com/linusmanuel" target="_blank">Linus Manuel</a>
-- **Nicasio Marques** - _Desenvolvedor_ - <a href="https://github.com/nicasiomarques" target="_blank">Nicasio Marques</a>
+- **Nicasio Marques** - _Tech Lead_ - <a href="https://github.com/nicasiomarques" target="_blank">Nicasio Marques</a>
 
 ## 🎁 Expressões de gratidão
 
