@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border: none;
   text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -14,5 +15,5 @@ html {
 
 body {
   font-size: 1rem;
-  background-color: $color-grey-light;
+  background-color: $color-grey-light-1;
 }

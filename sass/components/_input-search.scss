@@ -1,0 +1,16 @@
+.input-search {
+  outline: none;
+
+  &--filter {
+    width: 70%;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    background-color: $color-grey-light-1;
+    border-radius: $default-border-radius;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -4,13 +4,14 @@ body {
   color: $color-black;
 }
 
-.heading__secondary {
+.heading-secondary {
   font-size: 1.2rem;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
 }
 
-.heading__tertiary {
+.heading-tertiary {
   font-size: 1rem;
   text-transform: capitalize;
   margin-bottom: 0.3rem;

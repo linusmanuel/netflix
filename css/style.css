@@ -5,7 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  text-decoration: none; }
+  text-decoration: none;
+  list-style: none; }
 
 html {
   font-size: 62.5%; }
@@ -19,12 +20,13 @@ body {
   font-size: 1rem;
   color: #000; }
 
-.heading__secondary {
+.heading-secondary {
   font-size: 1.2rem;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.2rem; }
 
-.heading__tertiary {
+.heading-tertiary {
   font-size: 1rem;
   text-transform: capitalize;
   margin-bottom: 0.3rem; }
@@ -37,6 +39,40 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 6rem; }
+
+.input-search {
+  outline: none; }
+  .input-search--filter {
+    width: 70%;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    background-color: #f7f7f7;
+    border-radius: 3px; }
+    .input-search--filter:not(:last-child) {
+      margin-bottom: 1rem; }
+
+.aside {
+  width: 20rem; }
+  .aside__browse {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    background-color: #fff; }
+    .aside__browse .navegation__item {
+      padding: 0.8rem 0; }
+    .aside__browse .navegation__link:link, .aside__browse .navegation__link:visited {
+      font-size: 1.4rem;
+      color: #000; }
+    .aside__browse .navegation__link:hover, .aside__browse .navegation__link:active {
+      color: #fe2832; }
+  .aside__filter {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    background-color: #fff; }
 
 .menu {
   display: flex;
@@ -77,3 +113,8 @@ body {
   height: 48rem;
   position: relative;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.section-features {
+  display: flex;
+  justify-content: space-around;
+  padding: 4.5rem 0; }

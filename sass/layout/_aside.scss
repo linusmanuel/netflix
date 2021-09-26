@@ -1,0 +1,36 @@
+.aside {
+  width: 20rem;
+
+  &__browse {
+    @include b-shadow-radius();
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    background-color: $color-white;
+
+    .navegation {
+      &__item {
+        padding: 0.8rem 0;
+      }
+
+      &__link {
+        &:link,
+        &:visited {
+          font-size: 1.4rem;
+          color: $color-black;
+        }
+
+        &:hover,
+        &:active {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &__filter {
+    @include b-shadow-radius();
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    background-color: $color-white;
+  }
+}
