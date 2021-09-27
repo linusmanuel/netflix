@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
   border: none;
   text-decoration: none;
   list-style: none; }
@@ -13,7 +13,8 @@ html {
 
 body {
   font-size: 1rem;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  box-sizing: border-box; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -40,13 +41,49 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 6rem; }
 
+.u-margin-right-small {
+  margin-right: 1rem; }
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .container-card .card {
+    background-color: #fff; }
+
 .container-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-
-.card {
-  width: 16rem; }
+  .container-cards .card {
+    background-color: #fff; }
+    .container-cards .card__img {
+      width: 26rem;
+      height: 14.5rem;
+      background-size: cover; }
+      .container-cards .card__img--1 {
+        background-image: url("../img/move-1.jpg"); }
+    .container-cards .card__content {
+      padding: 1.2rem;
+      font-size: 1rem; }
+    .container-cards .card__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #000;
+      margin-bottom: 0.5rem; }
+    .container-cards .card__classification {
+      display: flex; }
+      .container-cards .card__classification .star-box .star {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        background-color: #fe2832;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .container-cards .card__classification__details {
+        padding: 1.5rem 0; }
+        .container-cards .card__classification__details .spear {
+          padding: 1.5rem 0; }
 
 .search-box {
   width: 100%; }
@@ -96,6 +133,29 @@ body {
   margin-bottom: 3rem;
   background-color: #fff; }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  clear: both; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
 .menu {
   display: flex;
   width: 100%;
@@ -134,9 +194,8 @@ body {
 .header {
   height: 48rem;
   position: relative;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  background-color: #fff; }
 
 .section-features {
-  display: flex;
-  justify-content: space-around;
   padding: 4.5rem 0; }

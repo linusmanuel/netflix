@@ -31,58 +31,73 @@
 
     <main>
       <section class="section-features">
-        <aside class="aside">
-          <nav class="aside__browse">
-            <h2 class="heading-secondary">browse</h2>
-            <ul class="navegation">
-              <li class="navegation__item"><a href="#" class="navegation__link">Recent Releases</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Netflix Originals</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">TV</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Action</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Anime</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Children & Family</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Classics</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Comedies</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Cult Movies</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Dramas</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Fairy & Spirituality</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Holiday Favorites</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Harror</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Independent</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Internacional Movies</a></li>
-              <li class="navegation__item"><a href="#" class="navegation__link">Music</a></li>
-            </ul>
-          </nav>
-          <nav class="aside__filter">
-            <h2 class="heading-secondary">filters:</h2>
-            <input type="search" class="input-search input-search--filter">
-            <input type="search" class="input-search input-search--filter">
-          </nav>
-        </aside>
-
-        <div class="container">
-          <div class="search-box u-margin-bottom-medium">
-            <input type="search" placeholder="Search" class="input-search input-search--main">
+        <div class="row">
+          <div class="col-1-of-4">
+            <nav class="aside__browse">
+              <h2 class="heading-secondary">browse</h2>
+              <ul class="navegation">
+                <li class="navegation__item"><a href="#" class="navegation__link">Recent Releases</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Netflix Originals</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">TV</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Action</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Anime</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Children & Family</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Classics</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Comedies</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Cult Movies</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Dramas</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Fairy & Spirituality</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Holiday Favorites</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Harror</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Independent</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Internacional Movies</a></li>
+                <li class="navegation__item"><a href="#" class="navegation__link">Music</a></li>
+              </ul>
+            </nav>
+            <nav class="aside__filter">
+              <h2 class="heading-secondary">filters:</h2>
+              <input type="search" class="input-search input-search--filter">
+              <input type="search" class="input-search input-search--filter">
+            </nav>
           </div>
 
-          <div class="container-cards">
-            <article class="card card--1">
-              <div class="card__img">img</div>
-              <div class="card__title">title</div>
-              <div class="card__classification">classification</div>
-              <div class="card__text">paragraph</div>
-              <div class="button-box">
-                <a href="#" class="btn btn--play">play</a>
-                <a href="" class="btn btn--play">favorite</a>
-              </div>
-            </article>
+          <div class="col-3-of-4">
+            <div class="search-box u-margin-bottom-medium">
+              <input type="search" placeholder="Search" class="input-search input-search--main">
+            </div>
+
+            <div class="container-cards">
+              <article class="card">
+                <div class="card__img card__img--1"></div>
+                <div class="card__content">
+                  <div class="card__title">a very murray christmas</div>
+                  <div class="card__classification">
+                    <div class="star-box u-margin-right-small">
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                    </div>
+                    <div class="move-details">
+                      <span class="spear u-margin-right-small">2005</span>
+                      <span class="record-company u-margin-right-small">movie</span>
+                      <span class="duraction">24 min</span>
+                    </div>
+                  </div>
+                  <div class="card__description">paragraph</div>
+                  <div class="card__button">
+                    <a href="#" class="btn btn--play">play</a>
+                    <a href="" class="btn btn--play">favorite</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
           </div>
         </div>
       </section>
     </main>
-
-
-
   </body>
 
 </html>

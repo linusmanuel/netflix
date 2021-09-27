@@ -2,8 +2,69 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
 
-.card {
-  width: 16rem;
+  .card {
+    background-color: $color-white;
+
+    &__img {
+      width: 26rem;
+      height: 14.5rem;
+      background-size: cover;
+
+      &--1 {
+        background-image: url("../img/move-1.jpg");
+      }
+    }
+
+    &__content {
+      padding: 1.2rem;
+      font-size: 1rem;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: $color-black;
+      margin-bottom: 0.5rem;
+    }
+
+    &__classification {
+      display: flex;
+
+      .star-box {
+        .star {
+          width: 1.5rem;
+          height: 1.5rem;
+          display: inline-block;
+          background-color: $color-primary;
+          clip-path: polygon(
+            50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%
+          );
+        }
+      }
+
+      &__details {
+        padding: 1.5rem 0;
+        .spear {
+          padding: 1.5rem 0;
+        }
+      }
+    }
+
+    &__paragraph {
+    }
+
+    &__button {
+    }
+  }
 }
