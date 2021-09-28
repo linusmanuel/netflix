@@ -21,7 +21,7 @@
 📌 Quando o botão adicionar a playlist for clicado deve criar um registro das informações do filme dentre elas(nome, url da thumnail, descrição e id) a cada filme adicionado na lista de favoritos equivale a um novo item no vector a informação deve ser salva no navegador (localstore).⏳
 
 
-## 🚀 Começando
+## 🚀 Mais detalhes!
 
 📲 <a href="" target="_blank">Esperimenta</a>
 
