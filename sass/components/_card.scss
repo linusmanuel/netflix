@@ -1,23 +1,60 @@
-.container-cards {
+.main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   .card {
+    @include b-shadow-radius;
+    width: 26rem;
+    margin-bottom: $margin-bottom-small;
     background-color: $color-white;
+    overflow: hidden;
 
     &__img {
       width: 26rem;
       height: 14.5rem;
+      margin-bottom: $margin-bottom-small;
       background-size: cover;
 
       &--1 {
         background-image: url("../img/move-1.jpg");
       }
+
+      &--2 {
+        background-image: url("../img/move-1.jpg");
+      }
+
+      &--3 {
+        background-image: url("../img/move-1.jpg");
+      }
+
+      &--4 {
+        background-image: url("../img/move-1.jpg");
+      }
+
+      &--5 {
+        background-image: url("../img/move-1.jpg");
+      }
+
+      &--6 {
+        background-image: url("../img/move-1.jpg");
+      }
+
+      &--7 {
+        background-image: url("../img/move-1.jpg");
+      }
+
+      &--8 {
+        background-image: url("../img/move-1.jpg");
+      }
+
+      &--9 {
+        background-image: url("../img/move-1.jpg");
+      }
     }
 
-    &__content {
-      padding: 1.2rem;
+    &-content {
+      padding: 0 1.2rem;
       font-size: 1rem;
     }
 
@@ -31,40 +68,55 @@
 
     &__classification {
       display: flex;
+      justify-content: space-between;
+      margin-bottom: $margin-bottom-small;
 
-      .star-box {
-        .star {
-          width: 1.5rem;
-          height: 1.5rem;
-          display: inline-block;
-          background-color: $color-primary;
-          clip-path: polygon(
-            50% 0%,
-            61% 35%,
-            98% 35%,
-            68% 57%,
-            79% 91%,
-            50% 70%,
-            21% 91%,
-            32% 57%,
-            2% 35%,
-            39% 35%
-          );
-        }
-      }
-
-      &__details {
-        padding: 1.5rem 0;
-        .spear {
-          padding: 1.5rem 0;
-        }
+      .star {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        background-color: $color-primary;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
       }
     }
 
-    &__paragraph {
+    &__link {
+      &:link,
+      &:visited {
+        text-transform: capitalize;
+        line-height: 1.5rem;
+        color: $color-black;
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+
+      &:hover,
+      &:active {
+        border-bottom: 1px solid $color-primary;
+      }
     }
 
-    &__button {
+    &__text {
+      margin-bottom: $margin-bottom-small;
+    }
+
+    &__cta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $margin-bottom-small;
     }
   }
 }

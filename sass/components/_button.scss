@@ -1,9 +1,41 @@
-.container-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  .card {
+.btn {
+  &:link,
+  &:visited {
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 3rem;
+    color: $color-white;
+    display: inline-block;
     background-color: $color-white;
+    border-radius: 3px;
+  }
+
+  &--play {
+    &:link,
+    &:visited {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+
+    &:hover,
+    &:active {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+
+  &--myList {
+    &:link,
+    &:visited {
+      color: $color-white;
+      background-color: $color-grey-dark-1;
+    }
+
+    &:hover,
+    &:active {
+      background-color: lighten($color-grey-dark-1, 5%);
+    }
   }
 }
