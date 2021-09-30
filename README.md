@@ -23,7 +23,7 @@
 
 ## 🚀 Mais detalhes!
 
-📲 <a href="" target="_blank">Esperimenta</a>
+📲 <a href="https://linusnetflix.netlify.app/" target="_blank">Esperimenta</a>
 
 
 📲[Veja um video funcionando!]()
