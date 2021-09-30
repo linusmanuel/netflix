@@ -43,14 +43,15 @@
 
 // BUTTON THEME
 .button {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   background-color: $color-white;
   position: fixed;
   top: 2rem;
   right: 2rem;
   border-radius: 50%;
   box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+  transition: all 0.2;
 
   .light-mode,
   .dark-mode {
@@ -59,15 +60,25 @@
     height: 100%;
     border-radius: 50%;
     cursor: pointer;
+
+    &:hover {
+      background-size: 2.5rem;
+    }
+
+    &:hover,
+    &:hover .button {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 
   .light-mode {
     background: $color-white url("../svg/sun.svg") no-repeat center;
-    background-size: 3rem;
+    background-size: 2rem;
   }
 
   .dark-mode {
     background: $color-grey-dark-1 url("../svg/moon.svg") no-repeat center;
-    background-size: 3rem;
+    background-size: 2rem;
   }
 }

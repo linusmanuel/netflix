@@ -71,14 +71,15 @@ body {
   background-color: #494957; }
 
 .button {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   background-color: #fff;
   position: fixed;
   top: 2rem;
   right: 2rem;
   border-radius: 50%;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2; }
   .button .light-mode,
   .button .dark-mode {
     position: absolute;
@@ -89,12 +90,21 @@ body {
     height: 100%;
     border-radius: 50%;
     cursor: pointer; }
+    .button .light-mode:hover,
+    .button .dark-mode:hover {
+      background-size: 2.5rem; }
+    .button .light-mode:hover,
+    .button .light-mode:hover .button,
+    .button .dark-mode:hover,
+    .button .dark-mode:hover .button {
+      width: 5rem;
+      height: 5rem; }
   .button .light-mode {
     background: #fff url("../svg/sun.svg") no-repeat center;
-    background-size: 3rem; }
+    background-size: 2rem; }
   .button .dark-mode {
     background: #3d3d49 url("../svg/moon.svg") no-repeat center;
-    background-size: 3rem; }
+    background-size: 2rem; }
 
 .main {
   display: flex;
