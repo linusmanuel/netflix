@@ -1,3 +1,4 @@
+// BUTTON CARD
 .btn {
   &:link,
   &:visited {
@@ -37,5 +38,35 @@
     &:active {
       background-color: lighten($color-grey-dark-1, 5%);
     }
+  }
+}
+
+// BUTTON THEME
+.button {
+  width: 6rem;
+  height: 6rem;
+  background-color: $color-white;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+
+  .light-mode,
+  .dark-mode {
+    @include centerElement;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .light-mode {
+    background: $color-white url("../svg/sun.svg") no-repeat center;
+    background-size: 3rem;
+  }
+
+  .dark-mode {
+    background: $color-grey-dark-1 url("../svg/moon.svg") no-repeat center;
+    background-size: 3rem;
   }
 }
