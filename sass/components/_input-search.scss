@@ -13,7 +13,7 @@
     font-size: 1.2rem;
     background: $color-white url("../img/search-button.png") no-repeat left;
     background-position: 2rem;
-    box-sizing: border-box;
+    box-sizing: inherit;
 
     &:focus {
       border-bottom: 2px solid $color-primary;

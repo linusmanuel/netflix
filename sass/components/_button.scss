@@ -23,7 +23,7 @@
 
     &:hover,
     &:active {
-      background-color: darken($color-primary, 10%);
+      background-color: darken($color-primary, 20%);
     }
   }
 
@@ -36,7 +36,7 @@
 
     &:hover,
     &:active {
-      background-color: lighten($color-grey-dark-1, 5%);
+      background-color: lighten($color-grey-dark-1, 20%);
     }
   }
 }
