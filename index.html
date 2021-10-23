@@ -15,18 +15,33 @@
   <body>
     <header class="header">
       <div class="menu">
-        <div class="menu__logo"></div>
-        <a href="#" class="menu__link">Browse</a>
-        <a href="#" class="menu__link">DVD</a>
-        <a href="#main-search" class="menu__link">Search</a>
+        <img src="/img/netflix_logo.png" alt="Netflix logo" class="logo">
+        <nav class="menu__nav">
+          <a href="#" class="menu__link">Browse</a>
+          <a href="#" class="menu__link">DVD</a>
+          <a href="#" class="menu__link">Search</a>
+        </nav>
+
         <div class="user">
-          <div class="user__img"></div>
-          <span class="user__name">linus manuel</span>
+          <img src="/img/user.jpg" alt="Photo user" class="user__img">
+          <span class="user__name">Linus Manuel</span>
         </div>
       </div>
 
-      <!-- Add a awsome slide show -->
-      <div class="slider"></div>
+      <div class="mySlides fade mySlides--1"></div>
+      <div class="mySlides fade mySlides--2"></div>
+      <div class="mySlides fade mySlides--3"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="adjust">
+        <div class="dot-container">
+          <span class="dot dot--1" onclick="currentSlide(1)"></span>
+          <span class="dot dot--2" onclick="currentSlide(2)"></span>
+          <span class="dot dot--3" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -63,11 +78,10 @@
 
           <div class="col-3-of-4">
             <div class="search-box u-margin-bottom-medium">
-              <input id="main-search" type="search" placeholder="Search" class="input-search input-search--main">
+              <input id="search-button" type="search" placeholder="Search" class="input-search input-search--main">
             </div>
 
-
-            <div class="main">
+            <div class="cards-container">
               <article class="card">
                 <div class="card__img card__img--1"></div>
                 <div class="card-content">
@@ -305,5 +319,8 @@
   </body>
 
   <script src="js/theme.js"></script>
+  <script src="js/slide-show.js"></script>
+  <script src="js/search-feature.js"></script>
+
 
 </html>

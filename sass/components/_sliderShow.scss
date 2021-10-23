@@ -1,0 +1,102 @@
+.header {
+  .mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .mySlides--1 {
+    @include base-slideShow;
+    background-image: url("../img/header_show_master_of_none_large.jpg");
+  }
+
+  .mySlides--2 {
+    @include base-slideShow;
+    background-image: url("../img/header_show_stranger-things_one.png");
+  }
+
+  .mySlides--3 {
+    @include base-slideShow;
+    background-image: url("../img/header_show_suits.jpg");
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+    &:hover,
+    &:hover {
+      background-color: rgba($color-black, 0.8);
+    }
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .adjust {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+  } 
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $color-grey-light-1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+    &:hover {
+      background-color: $color-primary;
+  }
+  
+  .active {
+    background-color: $color-primary;
+  }
+
+ 
+
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

@@ -1,16 +1,16 @@
 .menu {
+  padding: 1.5rem;
+  padding-left: 3.5rem;
+  padding-right: 8rem;
   display: flex;
-  width: 100%;
-  padding: 1.5rem 3rem;
-  position: absolute;
-  top: 0;
-  left: 0;
+  align-items: center;
 
-  &__logo {
-    width: 7.5rem;
-    height: 2.5rem;
+  .logo {
     margin-right: 3rem;
-    background: url("../img/netflix_logo.png") no-repeat center;
+  }
+
+  &__nav {
+    margin-right: auto;
   }
 
   &__link {
@@ -22,22 +22,21 @@
       margin-right: 1.4rem;
     }
   }
+}
 
-  .user {
-    &__img {
-      width: 2.5rem;
-      height: 2.5rem;
-      margin-right: 1rem;
-      background: url("../img/user.jpg");
-      background-size: cover;
-      border: 2px solid $color-white;
-      border-radius: $default-border-radius;
-      float: left;
-    }
+.user {
+  align-self: flex-end;
+  &__img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    border: 2px solid $color-white;
+    border-radius: $default-border-radius;
+    float: left;
+  }
 
-    &__name {
-      @include menu-text();
-      text-transform: capitalize;
-    }
+  &__name {
+    @include menu-text();
+    text-transform: capitalize;
   }
 }
